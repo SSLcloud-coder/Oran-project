@@ -1,0 +1,59 @@
+application:
+  name: ExampleApp
+  version: 1.0.0
+  description: This is an example application configuration file using YAML.
+
+server:
+  host: localhost
+  port: 8081
+  environment: production
+
+database:
+  type: postgresql
+  host: db.example.com
+  port: 5433
+  name: exampledb
+  user: dbuser
+  password: secretpassword
+
+logging:
+  level: INFO
+  file: /var/log/error.log
+  format: "[%(asctime)s] %(levelname)s in %(module)s: %(message)s"
+
+features:
+  authentication: false
+  caching: true
+  debugging: false
+  analytics: false
+
+api_keys:
+  google_maps: "YOUR_GOOGLE_MAPS_API_KEY"
+  sendgrid: "YOUR_SENDGRID_API_KEY"
+
+email:
+  smtp_server: smtp.example.com
+  smtp_port: 587
+  username: emailuser
+  password: emailpassword
+  use_tls: true
+  from_address: yrert
+  admin_address: admin@example.com
+
+users:
+  - username: johndoe
+    password: weer445%%%777**
+    roles:
+      - admin
+      - user
+
+  - username: janedoe
+    password: janedoepassword
+    roles:
+      - user
+
+thresholds:
+  warning: 75
+  critical: 90
+
+maintenance_mode: false
